@@ -11,11 +11,11 @@
 #import "UIColor+expanded.h"
 
 #define kVRGCalendarViewTopBarHeight 45
-#define kVRGCalendarViewWidth 320
+#define kVRGCalendarViewWidth 375
 
 //#define kVRGCalendarViewDayWidth 44
 //#define kVRGCalendarViewDayHeight 40
-#define kVRGCalendarViewDayWidth 44
+#define kVRGCalendarViewDayWidth 52 //44
 #define kVRGCalendarViewDayHeight 35
 
 #define kVRGCalendarViewDayPadding 5

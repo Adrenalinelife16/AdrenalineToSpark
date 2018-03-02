@@ -315,10 +315,10 @@
     
     
     CGRect rect=self.tblMainTable.frame;
-    rect.origin.y= targetHeight+95; //360
-    rect.size.height= 198; // 165
+    rect.origin.y= targetHeight+125; //360
+    rect.size.height= 250; // 198
     self.tblMainTable.frame=rect;
-    [self.calendarView setContentSize:CGSizeMake(320, targetHeight+rect.size.height)]; // 320
+    [self.calendarView setContentSize:CGSizeMake(375, targetHeight+rect.size.height)];
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd h:mm:ss"];
     NSDate *currentDate =   [NSDate date];
