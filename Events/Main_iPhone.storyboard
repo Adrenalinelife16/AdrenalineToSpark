@@ -724,6 +724,7 @@
                             <constraint firstItem="vqW-PU-Ibi" firstAttribute="top" secondItem="jFF-pG-qCN" secondAttribute="top" constant="85" id="fmh-sL-HnE"/>
                             <constraint firstItem="vqW-PU-Ibi" firstAttribute="leading" secondItem="jFF-pG-qCN" secondAttribute="leading" id="j8G-L6-Bmw"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xfz-gp-keI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Discover" selectedImage="Discover Selected" id="Emj-od-rTF"/>
                     <navigationItem key="navigationItem" id="a40-XR-67K"/>
@@ -776,9 +777,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white-cell.png" translatesAutoresizingMaskIntoConstraints="NO" id="M7C-27-puH">
+                                        <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white-cell.png" translatesAutoresizingMaskIntoConstraints="NO" id="M7C-27-puH">
                                             <rect key="frame" x="7" y="8" width="352" height="92"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="92" id="76r-Qd-yGo"/>
+                                                <constraint firstAttribute="width" constant="352" id="BO5-Nv-ahz"/>
+                                            </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HighResIconRed.png" translatesAutoresizingMaskIntoConstraints="NO" id="gfS-zz-COU">
                                             <rect key="frame" x="11" y="9" width="40" height="33"/>
@@ -811,6 +815,12 @@
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.19458383321762085" green="0.20693701505661011" blue="0.20737725496292114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="M7C-27-puH" secondAttribute="trailing" constant="16" id="0QG-yP-jgP"/>
+                                        <constraint firstItem="M7C-27-puH" firstAttribute="leading" secondItem="DfO-Px-4Zc" secondAttribute="leading" constant="7" id="LMq-Yn-JzO"/>
+                                        <constraint firstAttribute="bottom" secondItem="M7C-27-puH" secondAttribute="bottom" constant="98" id="Zf1-BA-F6Z"/>
+                                        <constraint firstItem="M7C-27-puH" firstAttribute="top" secondItem="DfO-Px-4Zc" secondAttribute="top" constant="8" id="c8L-tZ-8zs"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -819,137 +829,6 @@
                                     <outlet property="lblTweet" destination="Lim-cE-mux" id="hHQ-k3-Lrh"/>
                                     <outlet property="lblUserName" destination="cZL-mh-YDJ" id="v9E-8o-q13"/>
                                     <segue destination="kYa-5B-zJd" kind="push" id="bDj-6L-rqu"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SecondFeedCustomCell" rowHeight="116" id="6du-AJ-8aY" customClass="SecondFeedCustomCell">
-                                <rect key="frame" x="0.0" y="220" width="375" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6du-AJ-8aY" id="jiT-KU-M3P">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhj-6n-0Kv">
-                                            <rect key="frame" x="15" y="10" width="95" height="94"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" image="feedviewCell1.png">
-                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="clickedBtnOne:" destination="6du-AJ-8aY" eventType="touchUpInside" id="kBZ-ob-q3c"/>
-                                            </connections>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTf-VI-kin">
-                                            <rect key="frame" x="112" y="10" width="96" height="95"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" image="feedviewCell2.png">
-                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="clickedBtnTwo:" destination="6du-AJ-8aY" eventType="touchUpInside" id="AdY-xk-qCR"/>
-                                            </connections>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FG-qt-cxt">
-                                            <rect key="frame" x="210" y="10" width="95" height="95"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" image="feedviewCell3.png">
-                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="clickedBtnThree:" destination="6du-AJ-8aY" eventType="touchUpInside" id="IWk-oB-BcK"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="btnOne" destination="Bhj-6n-0Kv" id="Gpm-hP-6Qt"/>
-                                    <outlet property="btnThree" destination="2FG-qt-cxt" id="0Zl-0g-zgj"/>
-                                    <outlet property="btnTwo" destination="iTf-VI-kin" id="NHM-Cv-Dkr"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThirdFeedCustomCell" rowHeight="116" id="sLe-Of-UyI" customClass="ThirdFeedCustomCell">
-                                <rect key="frame" x="0.0" y="336" width="375" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sLe-Of-UyI" id="6ts-oe-vPj">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="secondpic.png" translatesAutoresizingMaskIntoConstraints="NO" id="6RD-P7-mFq">
-                                            <rect key="frame" x="201" y="10" width="105" height="96"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XV8-iX-Qlk">
-                                            <rect key="frame" x="15" y="10" width="185" height="96"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Many excellent people in fashion, i will write in my blog!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dew-Gm-EYk">
-                                                    <rect key="frame" x="8" y="38" width="150" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctT-kH-cMf">
-                                                    <rect key="frame" x="149" y="10" width="26" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <state key="normal" backgroundImage="Twitter.png">
-                                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                </button>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ugn-Qv-CMR">
-                                                    <rect key="frame" x="0.0" y="69" width="185" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <subviews>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  View Other 33 comments" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8W-1R-mQp">
-                                                            <rect key="frame" x="15" y="0.0" width="146" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </view>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAD-FO-2GC">
-                                                    <rect key="frame" x="0.0" y="69" width="185" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal">
-                                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                </button>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joanna Summer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5B-fC-dbn">
-                                                    <rect key="frame" x="8" y="8" width="124" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kl0-4v-C3F">
-                                                    <rect key="frame" x="8" y="25" width="124" height="14"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                                    <state key="normal" title="@JoannaS">
-                                                        <color key="titleColor" red="0.16467943787574768" green="0.62484288215637207" blue="0.89611423015594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="clickedUserId:" destination="sLe-Of-UyI" eventType="touchUpInside" id="7wZ-fW-F0v"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </view>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="btnUserId" destination="kl0-4v-C3F" id="Crf-CL-2KG"/>
-                                    <outlet property="clickedViewComments" destination="SAD-FO-2GC" id="G4R-gT-prv"/>
-                                    <outlet property="images" destination="6RD-P7-mFq" id="0AV-qk-zF3"/>
-                                    <outlet property="imgMainImage" destination="6RD-P7-mFq" id="qQM-KN-2MZ"/>
-                                    <outlet property="lblTweet" destination="dew-Gm-EYk" id="5A2-Ub-kaN"/>
-                                    <outlet property="lblUserName" destination="m5B-fC-dbn" id="RfD-3F-zoQ"/>
-                                    <outlet property="lblViewComment" destination="k8W-1R-mQp" id="7ET-e6-27D"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2343,18 +2222,13 @@
         <image name="Social Life Selected" width="25" height="25"/>
         <image name="Table Games" width="320" height="240"/>
         <image name="Tennis" width="320" height="240"/>
-        <image name="Twitter.png" width="26" height="22"/>
         <image name="Water Games" width="320" height="240"/>
         <image name="Yoga" width="320" height="240"/>
         <image name="actionbar_bg_white.png" width="640" height="80"/>
         <image name="arrow.png" width="11" height="14"/>
         <image name="event-feed-mask.png" width="92" height="92"/>
-        <image name="feedviewCell1.png" width="95" height="94"/>
-        <image name="feedviewCell2.png" width="96" height="95"/>
-        <image name="feedviewCell3.png" width="95" height="95"/>
         <image name="nearby.png" width="16" height="20"/>
         <image name="no_image.png" width="540" height="360"/>
-        <image name="secondpic.png" width="104" height="95"/>
         <image name="white-cell.png" width="306" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
