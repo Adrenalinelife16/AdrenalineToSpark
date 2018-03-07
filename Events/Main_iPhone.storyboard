@@ -297,7 +297,7 @@
             <objects>
                 <viewController id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1037"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fga-UX-TPd">
@@ -487,7 +487,7 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="iov-Wm-ifM"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1150"/>
+                    <size key="freeformSize" width="320" height="1150"/>
                     <connections>
                         <outlet property="address" destination="rpD-sW-GAv" id="fec-lk-PqS"/>
                         <outlet property="buttonBorder" destination="VQw-yU-nto" id="sFT-Da-K93"/>
@@ -522,11 +522,12 @@
             <objects>
                 <viewController id="w1Z-bF-ar5" customClass="DiscoverViewController" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="jFF-pG-qCN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1350"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqW-PU-Ibi">
-                                <rect key="frame" x="0.0" y="85" width="375" height="1183"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqW-PU-Ibi">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrk-hL-Fyp" userLabel="soccer">
                                         <rect key="frame" x="8" y="8" width="175" height="110"/>
@@ -711,27 +712,16 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="ESA-6Q-CWf"/>
-                                    <constraint firstAttribute="height" constant="1183" id="SDI-H4-Yh0"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="vqW-PU-Ibi" secondAttribute="trailing" id="DCy-4v-5gD"/>
-                            <constraint firstAttribute="bottom" secondItem="vqW-PU-Ibi" secondAttribute="bottom" constant="82" id="RlS-Gb-7Zq"/>
-                            <constraint firstItem="vqW-PU-Ibi" firstAttribute="top" secondItem="jFF-pG-qCN" secondAttribute="top" constant="85" id="fmh-sL-HnE"/>
-                            <constraint firstItem="vqW-PU-Ibi" firstAttribute="leading" secondItem="jFF-pG-qCN" secondAttribute="leading" id="j8G-L6-Bmw"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Xfz-gp-keI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Discover" selectedImage="Discover Selected" id="Emj-od-rTF"/>
                     <navigationItem key="navigationItem" id="a40-XR-67K"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1350"/>
+                    <size key="freeformSize" width="375" height="1320"/>
                     <connections>
                         <outlet property="butEight" destination="Kyu-qv-LCM" id="fmP-Sz-jvc"/>
                         <outlet property="butEighteen" destination="yUy-jl-gSz" id="ayu-R5-KBV"/>
@@ -2002,7 +1992,7 @@
             <objects>
                 <viewController id="raa-mk-ymy" customClass="ReviewCreateEventViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MUU-3I-Yys">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="955"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="955"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGe-7k-7nq">
@@ -2166,7 +2156,7 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="gLd-G6-W9m"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1068"/>
+                    <size key="freeformSize" width="320" height="1068"/>
                     <connections>
                         <outlet property="buttonBorder" destination="Mh6-lZ-oj3" id="Iw6-6i-jPf"/>
                         <outlet property="detailView" destination="toe-n2-bbn" id="RIa-9g-zOK"/>
