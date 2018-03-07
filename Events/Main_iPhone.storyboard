@@ -525,223 +525,185 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1350"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqW-PU-Ibi">
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqW-PU-Ibi">
                                 <rect key="frame" x="0.0" y="85" width="375" height="1183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utK-J8-91L" userLabel="Yoga">
-                                        <rect key="frame" x="8" y="244" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="yJh-X9-jfM"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Yoga"/>
-                                        <connections>
-                                            <action selector="buttonFour:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="K9h-7s-1xM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4D-Um-XlC" userLabel="golf">
-                                        <rect key="frame" x="8" y="362" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="yjD-Fc-jvd"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Golf"/>
-                                        <connections>
-                                            <action selector="buttonSix:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="lvF-u8-qo7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOi-qs-eEv" userLabel="Fitness">
-                                        <rect key="frame" x="191" y="242" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="w7K-vL-Qp8"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Fitness"/>
-                                        <connections>
-                                            <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="174-mu-M68"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrk-hL-Fyp" userLabel="soccer">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrk-hL-Fyp" userLabel="soccer">
                                         <rect key="frame" x="8" y="8" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="175" id="ZoM-bi-G1L"/>
-                                            <constraint firstAttribute="height" constant="110" id="kjy-QX-rNN"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         <state key="normal" image="Soccer"/>
                                         <connections>
                                             <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ATN-Yk-faF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvA-5v-Zbk" userLabel="football">
-                                        <rect key="frame" x="8" y="126" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="2wJ-4D-Anh"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Football"/>
-                                        <connections>
-                                            <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ClF-IV-0up"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar1-ol-i0Q" userLabel="basketball">
-                                        <rect key="frame" x="191" y="124" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="xdY-HC-m1W"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Basketball"/>
-                                        <connections>
-                                            <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="x58-lQ-OEq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyu-qv-LCM" userLabel="tennis">
-                                        <rect key="frame" x="8" y="480" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="W3D-nJ-s4e"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Tennis"/>
-                                        <connections>
-                                            <action selector="buttonEight:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="UeV-I8-Y50"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qb-TL-xvM" userLabel="fishing">
-                                        <rect key="frame" x="192" y="360" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="PBD-KU-a3f"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Fishing"/>
-                                        <connections>
-                                            <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="LwS-e7-TmG"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6d-Qv-Wgj" userLabel="riding">
-                                        <rect key="frame" x="192" y="478" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="wEB-Ga-zGa"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Riding"/>
-                                        <connections>
-                                            <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="uyK-Rk-0Gi"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjd-PI-yXI" userLabel="water games">
-                                        <rect key="frame" x="8" y="834" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="Z9j-d7-L7O"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Water Games"/>
-                                        <connections>
-                                            <action selector="buttonFour:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="KfJ-pV-g6n"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtL-Jb-8Hw" userLabel="disc games">
-                                        <rect key="frame" x="8" y="952" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="miE-EW-JqI"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Frisbee"/>
-                                        <connections>
-                                            <action selector="buttonSix:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="CUJ-p6-E1s"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL8-lq-tye" userLabel="climbing">
-                                        <rect key="frame" x="192" y="832" width="174" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="lE7-Fx-Sxx"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Climbing"/>
-                                        <connections>
-                                            <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="6EA-HJ-rwd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-cV-1Pe" userLabel="baseball/ softball">
-                                        <rect key="frame" x="8" y="598" width="175" height="110"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="MVp-IJ-ISd"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Baseball"/>
-                                        <connections>
-                                            <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="3iP-jZ-S7D"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-NX-ZZ2" userLabel="running/ hiking">
-                                        <rect key="frame" x="8" y="716" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="3Jk-5Q-jqL"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Running"/>
-                                        <connections>
-                                            <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="bEj-4m-n6u"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4co-Ha-nSO" userLabel="billards">
-                                        <rect key="frame" x="192" y="596" width="174" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="174" id="VtB-AT-XUN"/>
-                                            <constraint firstAttribute="height" constant="110" id="x5V-Cj-3oB"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Billards"/>
-                                        <connections>
-                                            <action selector="buttonOne:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="qmD-Kr-dNv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-z2-Gt8" userLabel="bowling">
-                                        <rect key="frame" x="192" y="950" width="174" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="xNR-hl-Pae"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Bowling"/>
-                                        <connections>
-                                            <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ivP-YB-kWw"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUy-jl-gSz" userLabel="table games">
-                                        <rect key="frame" x="8" y="1070" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="Uvb-83-l4F"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Table Games"/>
-                                        <connections>
-                                            <action selector="buttonEight:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="Pl1-9y-IgA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SL-JV-upC" userLabel="camping">
-                                        <rect key="frame" x="192" y="714" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="AaS-Pw-YOd"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Camping"/>
-                                        <connections>
-                                            <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="zpT-c5-l5f"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJx-au-XtY" userLabel="kickball">
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJx-au-XtY" userLabel="kickball">
                                         <rect key="frame" x="191" y="6" width="175" height="110"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="txL-KV-rNE"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         <state key="normal" image="Kickball"/>
                                         <connections>
                                             <action selector="buttonOne:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="MQb-97-S2x"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFN-yE-wQX" userLabel="lacrosse">
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvA-5v-Zbk" userLabel="football">
+                                        <rect key="frame" x="8" y="126" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Football"/>
+                                        <connections>
+                                            <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ClF-IV-0up"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar1-ol-i0Q" userLabel="basketball">
+                                        <rect key="frame" x="191" y="124" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Basketball"/>
+                                        <connections>
+                                            <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="x58-lQ-OEq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utK-J8-91L" userLabel="Yoga">
+                                        <rect key="frame" x="8" y="244" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Yoga"/>
+                                        <connections>
+                                            <action selector="buttonFour:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="K9h-7s-1xM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOi-qs-eEv" userLabel="Fitness">
+                                        <rect key="frame" x="191" y="242" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Fitness"/>
+                                        <connections>
+                                            <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="174-mu-M68"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4D-Um-XlC" userLabel="golf">
+                                        <rect key="frame" x="8" y="362" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Golf"/>
+                                        <connections>
+                                            <action selector="buttonSix:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="lvF-u8-qo7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qb-TL-xvM" userLabel="fishing">
+                                        <rect key="frame" x="192" y="360" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Fishing"/>
+                                        <connections>
+                                            <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="LwS-e7-TmG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyu-qv-LCM" userLabel="tennis">
+                                        <rect key="frame" x="8" y="480" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Tennis"/>
+                                        <connections>
+                                            <action selector="buttonEight:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="UeV-I8-Y50"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6d-Qv-Wgj" userLabel="riding">
+                                        <rect key="frame" x="192" y="478" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Riding"/>
+                                        <connections>
+                                            <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="uyK-Rk-0Gi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-cV-1Pe" userLabel="baseball/ softball">
+                                        <rect key="frame" x="8" y="598" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Baseball"/>
+                                        <connections>
+                                            <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="3iP-jZ-S7D"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4co-Ha-nSO" userLabel="billards">
+                                        <rect key="frame" x="192" y="596" width="174" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Billards"/>
+                                        <connections>
+                                            <action selector="buttonOne:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="qmD-Kr-dNv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-NX-ZZ2" userLabel="running/ hiking">
+                                        <rect key="frame" x="8" y="716" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Running"/>
+                                        <connections>
+                                            <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="bEj-4m-n6u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SL-JV-upC" userLabel="camping">
+                                        <rect key="frame" x="192" y="714" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Camping"/>
+                                        <connections>
+                                            <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="zpT-c5-l5f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjd-PI-yXI" userLabel="water games">
+                                        <rect key="frame" x="8" y="834" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Water Games"/>
+                                        <connections>
+                                            <action selector="buttonFour:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="KfJ-pV-g6n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL8-lq-tye" userLabel="climbing">
+                                        <rect key="frame" x="192" y="832" width="174" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Climbing"/>
+                                        <connections>
+                                            <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="6EA-HJ-rwd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtL-Jb-8Hw" userLabel="disc games">
+                                        <rect key="frame" x="8" y="952" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Frisbee"/>
+                                        <connections>
+                                            <action selector="buttonSix:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="CUJ-p6-E1s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-z2-Gt8" userLabel="bowling">
+                                        <rect key="frame" x="192" y="950" width="174" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Bowling"/>
+                                        <connections>
+                                            <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ivP-YB-kWw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUy-jl-gSz" userLabel="table games">
+                                        <rect key="frame" x="8" y="1070" width="175" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" image="Table Games"/>
+                                        <connections>
+                                            <action selector="buttonEight:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="Pl1-9y-IgA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFN-yE-wQX" userLabel="lacrosse">
                                         <rect key="frame" x="192" y="1066" width="175" height="114"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         <state key="normal" image="Lacrosse"/>
                                         <connections>
@@ -750,84 +712,9 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="hrk-hL-Fyp" firstAttribute="top" secondItem="vqW-PU-Ibi" secondAttribute="topMargin" id="0By-WH-RLQ"/>
-                                    <constraint firstItem="4co-Ha-nSO" firstAttribute="leading" secondItem="4SL-JV-upC" secondAttribute="leading" id="0Zd-mD-6Lz"/>
-                                    <constraint firstItem="4co-Ha-nSO" firstAttribute="trailing" secondItem="aL8-lq-tye" secondAttribute="trailing" id="2q0-I4-ft2"/>
-                                    <constraint firstItem="yUy-jl-gSz" firstAttribute="bottom" secondItem="AFN-yE-wQX" secondAttribute="bottom" id="49P-W2-kKO"/>
-                                    <constraint firstItem="PNV-z2-Gt8" firstAttribute="leading" secondItem="AFN-yE-wQX" secondAttribute="leading" id="4Ya-Sj-Ldy"/>
-                                    <constraint firstItem="tvA-5v-Zbk" firstAttribute="top" secondItem="hrk-hL-Fyp" secondAttribute="bottom" constant="8" symbolic="YES" id="4bM-b2-45g"/>
-                                    <constraint firstItem="Kyu-qv-LCM" firstAttribute="leading" secondItem="Uue-cV-1Pe" secondAttribute="leading" id="4vJ-bj-f8M"/>
-                                    <constraint firstItem="a4D-Um-XlC" firstAttribute="leading" secondItem="Kyu-qv-LCM" secondAttribute="leading" id="5Ri-Aq-XLf"/>
-                                    <constraint firstItem="Uue-cV-1Pe" firstAttribute="leading" secondItem="ELi-NX-ZZ2" secondAttribute="leading" id="6qK-EF-k1z"/>
-                                    <constraint firstItem="7qb-TL-xvM" firstAttribute="top" secondItem="BOi-qs-eEv" secondAttribute="bottom" constant="8" symbolic="YES" id="7f3-TJ-oLQ"/>
-                                    <constraint firstAttribute="width" constant="375" id="84j-no-WtV"/>
-                                    <constraint firstItem="Ar1-ol-i0Q" firstAttribute="leading" secondItem="tvA-5v-Zbk" secondAttribute="trailing" constant="8" symbolic="YES" id="9Pe-as-Qvz"/>
-                                    <constraint firstItem="4co-Ha-nSO" firstAttribute="top" secondItem="l6d-Qv-Wgj" secondAttribute="bottom" constant="8" symbolic="YES" id="A9S-kW-Hmq"/>
-                                    <constraint firstItem="Ar1-ol-i0Q" firstAttribute="top" secondItem="iJx-au-XtY" secondAttribute="bottom" constant="8" symbolic="YES" id="B1F-PI-sMF"/>
-                                    <constraint firstItem="Ar1-ol-i0Q" firstAttribute="trailing" secondItem="BOi-qs-eEv" secondAttribute="trailing" id="BfH-fC-Q0E"/>
-                                    <constraint firstItem="BOi-qs-eEv" firstAttribute="top" secondItem="Ar1-ol-i0Q" secondAttribute="bottom" constant="8" symbolic="YES" id="CWv-3n-I5X"/>
-                                    <constraint firstItem="aL8-lq-tye" firstAttribute="leading" secondItem="PNV-z2-Gt8" secondAttribute="leading" id="FBe-57-Rsi"/>
-                                    <constraint firstItem="aL8-lq-tye" firstAttribute="trailing" secondItem="PNV-z2-Gt8" secondAttribute="trailing" id="Fem-2F-cX0"/>
-                                    <constraint firstItem="Ar1-ol-i0Q" firstAttribute="leading" secondItem="BOi-qs-eEv" secondAttribute="leading" id="Fmd-dk-Vit"/>
-                                    <constraint firstItem="iJx-au-XtY" firstAttribute="leading" secondItem="hrk-hL-Fyp" secondAttribute="trailing" constant="8" symbolic="YES" id="HRo-rx-t1d"/>
-                                    <constraint firstItem="dtL-Jb-8Hw" firstAttribute="leading" secondItem="yUy-jl-gSz" secondAttribute="leading" id="HWb-UP-2kK"/>
-                                    <constraint firstItem="7qb-TL-xvM" firstAttribute="trailing" secondItem="l6d-Qv-Wgj" secondAttribute="trailing" id="Kbd-FA-8Kv"/>
-                                    <constraint firstItem="AFN-yE-wQX" firstAttribute="top" secondItem="PNV-z2-Gt8" secondAttribute="bottom" constant="6" id="Onl-9m-JqZ"/>
-                                    <constraint firstItem="BOi-qs-eEv" firstAttribute="trailing" secondItem="4co-Ha-nSO" secondAttribute="trailing" id="P6I-sh-ER2"/>
-                                    <constraint firstItem="tvA-5v-Zbk" firstAttribute="leading" secondItem="utK-J8-91L" secondAttribute="leading" id="PB3-dP-vRr"/>
-                                    <constraint firstItem="l6d-Qv-Wgj" firstAttribute="trailing" secondItem="4SL-JV-upC" secondAttribute="trailing" id="PGV-Pf-gdN"/>
-                                    <constraint firstItem="iJx-au-XtY" firstAttribute="trailing" secondItem="Ar1-ol-i0Q" secondAttribute="trailing" id="QQp-zu-UTB"/>
-                                    <constraint firstItem="Uue-cV-1Pe" firstAttribute="trailing" secondItem="ELi-NX-ZZ2" secondAttribute="trailing" id="QyD-qo-rbN"/>
-                                    <constraint firstAttribute="height" constant="1183" id="RCI-fQ-0GJ"/>
-                                    <constraint firstItem="ELi-NX-ZZ2" firstAttribute="leading" secondItem="Yjd-PI-yXI" secondAttribute="leading" id="Rgr-F9-g1x"/>
-                                    <constraint firstItem="Uue-cV-1Pe" firstAttribute="top" secondItem="Kyu-qv-LCM" secondAttribute="bottom" constant="8" symbolic="YES" id="S09-yR-Fpr"/>
-                                    <constraint firstItem="PNV-z2-Gt8" firstAttribute="top" secondItem="aL8-lq-tye" secondAttribute="bottom" constant="8" symbolic="YES" id="SZf-m0-WcX"/>
-                                    <constraint firstItem="Kyu-qv-LCM" firstAttribute="top" secondItem="a4D-Um-XlC" secondAttribute="bottom" constant="8" symbolic="YES" id="SiK-eE-mW2"/>
-                                    <constraint firstItem="utK-J8-91L" firstAttribute="top" secondItem="tvA-5v-Zbk" secondAttribute="bottom" constant="8" symbolic="YES" id="Tbu-dZ-IxN"/>
-                                    <constraint firstItem="yUy-jl-gSz" firstAttribute="top" secondItem="dtL-Jb-8Hw" secondAttribute="bottom" constant="8" symbolic="YES" id="UdX-uc-oOn"/>
-                                    <constraint firstAttribute="bottom" secondItem="yUy-jl-gSz" secondAttribute="bottom" constant="3" id="Ulh-Yn-yZC"/>
-                                    <constraint firstItem="iJx-au-XtY" firstAttribute="leading" secondItem="Ar1-ol-i0Q" secondAttribute="leading" id="VaQ-ed-5t6"/>
-                                    <constraint firstItem="a4D-Um-XlC" firstAttribute="top" secondItem="utK-J8-91L" secondAttribute="bottom" constant="8" symbolic="YES" id="YAs-6I-04P"/>
-                                    <constraint firstItem="hrk-hL-Fyp" firstAttribute="leading" secondItem="tvA-5v-Zbk" secondAttribute="leading" id="Yya-R7-9hv"/>
-                                    <constraint firstItem="4SL-JV-upC" firstAttribute="trailing" secondItem="AFN-yE-wQX" secondAttribute="trailing" id="aLZ-Cp-10j"/>
-                                    <constraint firstItem="dtL-Jb-8Hw" firstAttribute="trailing" secondItem="yUy-jl-gSz" secondAttribute="trailing" id="b2j-9m-AXh"/>
-                                    <constraint firstItem="4SL-JV-upC" firstAttribute="leading" secondItem="aL8-lq-tye" secondAttribute="leading" id="bGo-EA-nqi"/>
-                                    <constraint firstItem="Kyu-qv-LCM" firstAttribute="trailing" secondItem="Uue-cV-1Pe" secondAttribute="trailing" id="dSP-ed-dUt"/>
-                                    <constraint firstItem="dtL-Jb-8Hw" firstAttribute="top" secondItem="Yjd-PI-yXI" secondAttribute="bottom" constant="8" symbolic="YES" id="efk-um-tcc"/>
-                                    <constraint firstItem="4SL-JV-upC" firstAttribute="top" secondItem="4co-Ha-nSO" secondAttribute="bottom" constant="8" symbolic="YES" id="g7F-KW-Suv"/>
-                                    <constraint firstItem="7qb-TL-xvM" firstAttribute="trailing" secondItem="vqW-PU-Ibi" secondAttribute="trailingMargin" id="h7t-EA-YoI"/>
-                                    <constraint firstItem="Yjd-PI-yXI" firstAttribute="trailing" secondItem="dtL-Jb-8Hw" secondAttribute="trailing" id="hB5-YW-61E"/>
-                                    <constraint firstItem="ELi-NX-ZZ2" firstAttribute="top" secondItem="Uue-cV-1Pe" secondAttribute="bottom" constant="8" symbolic="YES" id="hKx-Ib-UnS"/>
-                                    <constraint firstItem="iJx-au-XtY" firstAttribute="top" secondItem="vqW-PU-Ibi" secondAttribute="top" constant="6" id="hlo-76-1qd"/>
-                                    <constraint firstItem="utK-J8-91L" firstAttribute="trailing" secondItem="a4D-Um-XlC" secondAttribute="trailing" id="iEv-hW-QFK"/>
-                                    <constraint firstItem="l6d-Qv-Wgj" firstAttribute="centerX" secondItem="4co-Ha-nSO" secondAttribute="centerX" id="jJu-9y-z7b"/>
-                                    <constraint firstItem="l6d-Qv-Wgj" firstAttribute="top" secondItem="7qb-TL-xvM" secondAttribute="bottom" constant="8" symbolic="YES" id="jyx-rx-ijz"/>
-                                    <constraint firstItem="BOi-qs-eEv" firstAttribute="leading" secondItem="utK-J8-91L" secondAttribute="trailing" constant="8" symbolic="YES" id="lMa-YC-KQu"/>
-                                    <constraint firstItem="ELi-NX-ZZ2" firstAttribute="trailing" secondItem="Yjd-PI-yXI" secondAttribute="trailing" id="lpe-So-Ama"/>
-                                    <constraint firstItem="Yjd-PI-yXI" firstAttribute="top" secondItem="ELi-NX-ZZ2" secondAttribute="bottom" constant="8" symbolic="YES" id="n2p-DC-66n"/>
-                                    <constraint firstItem="aL8-lq-tye" firstAttribute="top" secondItem="4SL-JV-upC" secondAttribute="bottom" constant="8" symbolic="YES" id="r60-Rm-SsD"/>
-                                    <constraint firstItem="hrk-hL-Fyp" firstAttribute="leading" secondItem="vqW-PU-Ibi" secondAttribute="leadingMargin" id="rhQ-88-Cw1"/>
-                                    <constraint firstItem="7qb-TL-xvM" firstAttribute="leading" secondItem="l6d-Qv-Wgj" secondAttribute="leading" id="s8H-9l-lRH"/>
-                                    <constraint firstItem="a4D-Um-XlC" firstAttribute="trailing" secondItem="Kyu-qv-LCM" secondAttribute="trailing" id="sAo-Af-t10"/>
-                                    <constraint firstItem="BOi-qs-eEv" firstAttribute="centerX" secondItem="4co-Ha-nSO" secondAttribute="centerX" id="tou-rX-uqg"/>
-                                    <constraint firstItem="utK-J8-91L" firstAttribute="leading" secondItem="a4D-Um-XlC" secondAttribute="leading" id="tu9-0f-I4m"/>
-                                    <constraint firstItem="Yjd-PI-yXI" firstAttribute="leading" secondItem="dtL-Jb-8Hw" secondAttribute="leading" id="ujo-G8-gSm"/>
-                                    <constraint firstItem="l6d-Qv-Wgj" firstAttribute="leading" secondItem="4co-Ha-nSO" secondAttribute="leading" id="xqL-Sa-AcA"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ltn-zr-EKg" firstAttribute="bottom" secondItem="vqW-PU-Ibi" secondAttribute="bottom" constant="33" id="5ur-kk-xfF"/>
-                            <constraint firstItem="ltn-zr-EKg" firstAttribute="bottom" secondItem="vqW-PU-Ibi" secondAttribute="bottom" constant="33" id="61x-jm-NIw"/>
-                            <constraint firstItem="vqW-PU-Ibi" firstAttribute="leading" secondItem="jFF-pG-qCN" secondAttribute="leading" id="HWB-4J-KRe"/>
-                            <constraint firstAttribute="trailing" secondItem="vqW-PU-Ibi" secondAttribute="trailing" id="IHc-PL-abh"/>
-                            <constraint firstItem="vqW-PU-Ibi" firstAttribute="top" secondItem="ltn-zr-EKg" secondAttribute="top" constant="21" id="IRw-8o-OLd"/>
-                            <constraint firstItem="vqW-PU-Ibi" firstAttribute="leading" secondItem="ltn-zr-EKg" secondAttribute="leading" id="KHw-HC-9sQ"/>
-                            <constraint firstItem="vqW-PU-Ibi" firstAttribute="top" secondItem="ltn-zr-EKg" secondAttribute="top" constant="21" id="SWg-wL-Ghx"/>
-                            <constraint firstItem="vqW-PU-Ibi" firstAttribute="trailing" secondItem="ltn-zr-EKg" secondAttribute="trailing" id="g9b-Bd-TvM"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ltn-zr-EKg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Discover" selectedImage="Discover Selected" id="Emj-od-rTF"/>
