@@ -48,6 +48,9 @@
     [state addTarget:zipCode action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
     [zipCode addTarget:detailView action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
     
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor blackColor]}];
+    
     
 }
 

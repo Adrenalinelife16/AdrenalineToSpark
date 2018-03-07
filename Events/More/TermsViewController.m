@@ -20,6 +20,9 @@
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor blackColor]}];
+    
     txtVWContent.text = NSLocalizedString(@"CONTENT_TERMSCONDITIONS", @"CONTENT_TERMSCONDITIONS");
     
     }

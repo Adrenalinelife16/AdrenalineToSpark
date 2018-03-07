@@ -66,7 +66,7 @@
     self.navigationItem.title = titleText;
     self.navigationController.navigationBar.translucent = YES;
     [self.navigationController.navigationBar setTitleTextAttributes:
-     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+     @{NSForegroundColorAttributeName:[UIColor blackColor]}];
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 
    

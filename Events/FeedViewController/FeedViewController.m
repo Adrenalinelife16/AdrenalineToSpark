@@ -54,7 +54,7 @@
     [super viewWillAppear:animated];
      self.navigationItem.title = @"Social Life";
     [self.navigationController.navigationBar setTitleTextAttributes:
-     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+     @{NSForegroundColorAttributeName:[UIColor blackColor]}];
     [Utility afterDelay:0.01 withCompletion:^{
 //    [DSBezelActivityView newActivityViewForView:self.view.window];
     [self getFeedsFromServer];

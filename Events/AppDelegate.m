@@ -27,6 +27,7 @@
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6_80.png"] forBarMetrics:UIBarMetricsDefault];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
   
+
     
     
     [[UITabBar appearance] setUnselectedItemTintColor:[UIColor blackColor]];

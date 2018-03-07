@@ -39,6 +39,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Find Your Life";
+    
+    
  
     
     
@@ -49,7 +51,7 @@
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Find Your Life";
     [self.navigationController.navigationBar setTitleTextAttributes:
-     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+     @{NSForegroundColorAttributeName:[UIColor blackColor]}];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [self checkLogin];
     

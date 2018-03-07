@@ -52,6 +52,9 @@
     [txtPassword addTarget:txtConfirmPassword action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor blackColor]}];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated

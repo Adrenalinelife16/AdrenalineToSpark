@@ -77,9 +77,10 @@
     
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Find Your Life";
-    [self.navigationController.navigationBar setTitleTextAttributes:
-     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.hidesBackButton = YES;
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor blackColor]}];
     
     [self createCalendarView];
     [self clickedMyCalender:nil];

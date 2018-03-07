@@ -33,6 +33,9 @@
     
     
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor blackColor]}];
 
     
 }

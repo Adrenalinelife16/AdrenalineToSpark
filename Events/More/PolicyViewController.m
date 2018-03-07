@@ -20,6 +20,9 @@
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor blackColor]}];
+    
     policyTextView.text = NSLocalizedString(@"CONTENT_PRIVACY", "CONTENT_PRIVACY");
     
 }
