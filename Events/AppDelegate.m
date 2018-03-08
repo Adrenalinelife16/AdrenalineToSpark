@@ -24,9 +24,10 @@
     // uncomment below and then comment back to see difference
     
     
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6_80.png"] forBarMetrics:UIBarMetricsDefault];
+   // [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6_80.png"] forBarMetrics:UIBarMetricsDefault];
   //  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
   
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
 
     
     
