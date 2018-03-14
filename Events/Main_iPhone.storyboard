@@ -638,15 +638,15 @@
             <objects>
                 <viewController id="w1Z-bF-ar5" customClass="DiscoverViewController" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="jFF-pG-qCN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqW-PU-Ibi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1320"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bcq-l7-ttZ">
-                                        <rect key="frame" x="8" y="-12" width="359" height="1304"/>
+                                        <rect key="frame" x="8" y="-12" width="359" height="1183"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrk-hL-Fyp" userLabel="soccer">
@@ -844,7 +844,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1320"/>
+                    <size key="freeformSize" width="375" height="1200"/>
                     <connections>
                         <outlet property="butEight" destination="Kyu-qv-LCM" id="fmP-Sz-jvc"/>
                         <outlet property="butEighteen" destination="yUy-jl-gSz" id="ayu-R5-KBV"/>
