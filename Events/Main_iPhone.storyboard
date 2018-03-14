@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -120,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTQ-ri-y7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1728.5" y="1540"/>
+            <point key="canvasLocation" x="-2765.6000000000004" y="1385.3073463268368"/>
         </scene>
         <!--Tab Bar Center Icon-->
         <scene sceneID="XhB-8n-zSN">
@@ -148,7 +148,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFb-jA-sY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2971" y="-1350"/>
+            <point key="canvasLocation" x="-4753.6000000000004" y="-1214.392803598201"/>
         </scene>
         <!--ProgramViewController-->
         <scene sceneID="Zm0-gr-3hJ">
@@ -276,13 +276,13 @@
                         <outlet property="myAddButton" destination="3ec-V9-YvN" id="vn3-9p-tGU"/>
                         <outlet property="myFilterButton" destination="7dK-4v-tE2" id="u18-sk-YCV"/>
                         <outlet property="tblMainTbl" destination="6eF-vP-BpW" id="rT2-Bn-cui"/>
-                        <segue destination="Jo0-vK-BNb" kind="push" identifier="CEcategory" id="Bt6-Gi-eBC"/>
-                        <segue destination="ofP-CN-yoG" kind="push" identifier="loginView" id="Yzg-yO-FJ6"/>
+                        <segue destination="Jo0-vK-BNb" kind="show" identifier="CEcategory" id="Bt6-Gi-eBC"/>
+                        <segue destination="ofP-CN-yoG" kind="show" identifier="loginView" id="Yzg-yO-FJ6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afA-Kn-raX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1616" y="-2162.5"/>
+            <point key="canvasLocation" x="-2585.6000000000004" y="-1945.2773613193406"/>
         </scene>
         <!--Category Table View Controller-->
         <scene sceneID="QF4-Ku-B6I">
@@ -301,7 +301,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="MgQ-Su-gZO" kind="push" identifier="CreateEvent" id="4ht-65-Ocw"/>
+                                    <segue destination="MgQ-Su-gZO" kind="show" identifier="CreateEvent" id="4ht-65-Ocw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -316,7 +316,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yoc-v0-Jun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1031" y="-2187"/>
+            <point key="canvasLocation" x="-1649.6000000000001" y="-1967.3163418290856"/>
         </scene>
         <!--Create Event View Controller-->
         <scene sceneID="of1-2C-MFB">
@@ -620,7 +620,7 @@
                         <outlet property="startTime" destination="Pfg-bc-J7S" id="unO-3A-OCF"/>
                         <outlet property="state" destination="BD2-3I-0LX" id="IDR-Jj-rEE"/>
                         <outlet property="zipCode" destination="lOK-6A-XlK" id="2t0-R8-fTm"/>
-                        <segue destination="raa-mk-ymy" kind="push" identifier="createEventReview" id="n30-Vc-9Ww"/>
+                        <segue destination="raa-mk-ymy" kind="show" identifier="createEventReview" id="n30-Vc-9Ww"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIR-xF-oLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -631,7 +631,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-488" y="-2482"/>
+            <point key="canvasLocation" x="-780.80000000000007" y="-2232.6836581709149"/>
         </scene>
         <!--Discover View Controller-->
         <scene sceneID="feH-eW-g6n">
@@ -641,191 +641,198 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqW-PU-Ibi">
-                                <rect key="frame" x="0.0" y="56" width="375" height="1207"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqW-PU-Ibi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrk-hL-Fyp" userLabel="soccer">
-                                        <rect key="frame" x="8" y="16" width="175" height="110"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bcq-l7-ttZ">
+                                        <rect key="frame" x="8" y="-12" width="359" height="1304"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Soccer"/>
-                                        <connections>
-                                            <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ATN-Yk-faF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvA-5v-Zbk" userLabel="football">
-                                        <rect key="frame" x="8" y="126" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Football"/>
-                                        <connections>
-                                            <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ClF-IV-0up"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar1-ol-i0Q" userLabel="basketball">
-                                        <rect key="frame" x="191" y="124" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Basketball"/>
-                                        <connections>
-                                            <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="x58-lQ-OEq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utK-J8-91L" userLabel="Yoga">
-                                        <rect key="frame" x="8" y="244" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Yoga"/>
-                                        <connections>
-                                            <action selector="buttonFour:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="K9h-7s-1xM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOi-qs-eEv" userLabel="Fitness">
-                                        <rect key="frame" x="191" y="242" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Fitness"/>
-                                        <connections>
-                                            <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="174-mu-M68"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4D-Um-XlC" userLabel="golf">
-                                        <rect key="frame" x="8" y="362" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Golf"/>
-                                        <connections>
-                                            <action selector="buttonSix:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="lvF-u8-qo7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qb-TL-xvM" userLabel="fishing">
-                                        <rect key="frame" x="192" y="360" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Fishing"/>
-                                        <connections>
-                                            <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="LwS-e7-TmG"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyu-qv-LCM" userLabel="tennis">
-                                        <rect key="frame" x="8" y="480" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Tennis"/>
-                                        <connections>
-                                            <action selector="buttonEight:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="UeV-I8-Y50"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6d-Qv-Wgj" userLabel="riding">
-                                        <rect key="frame" x="192" y="478" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Riding"/>
-                                        <connections>
-                                            <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="uyK-Rk-0Gi"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-cV-1Pe" userLabel="baseball/ softball">
-                                        <rect key="frame" x="8" y="598" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Baseball"/>
-                                        <connections>
-                                            <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="3iP-jZ-S7D"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4co-Ha-nSO" userLabel="billards">
-                                        <rect key="frame" x="192" y="596" width="174" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Billards"/>
-                                        <connections>
-                                            <action selector="buttonOne:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="qmD-Kr-dNv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-NX-ZZ2" userLabel="running/ hiking">
-                                        <rect key="frame" x="8" y="716" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Running"/>
-                                        <connections>
-                                            <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="bEj-4m-n6u"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SL-JV-upC" userLabel="camping">
-                                        <rect key="frame" x="192" y="714" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Camping"/>
-                                        <connections>
-                                            <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="zpT-c5-l5f"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjd-PI-yXI" userLabel="water games">
-                                        <rect key="frame" x="8" y="834" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Water Games"/>
-                                        <connections>
-                                            <action selector="buttonFour:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="KfJ-pV-g6n"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL8-lq-tye" userLabel="climbing">
-                                        <rect key="frame" x="192" y="832" width="174" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Climbing"/>
-                                        <connections>
-                                            <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="6EA-HJ-rwd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtL-Jb-8Hw" userLabel="disc games">
-                                        <rect key="frame" x="8" y="952" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Frisbee"/>
-                                        <connections>
-                                            <action selector="buttonSix:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="CUJ-p6-E1s"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-z2-Gt8" userLabel="bowling">
-                                        <rect key="frame" x="192" y="950" width="174" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Bowling"/>
-                                        <connections>
-                                            <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ivP-YB-kWw"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUy-jl-gSz" userLabel="table games">
-                                        <rect key="frame" x="8" y="1070" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Table Games"/>
-                                        <connections>
-                                            <action selector="buttonEight:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="Pl1-9y-IgA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFN-yE-wQX" userLabel="lacrosse">
-                                        <rect key="frame" x="192" y="1066" width="175" height="114"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Lacrosse"/>
-                                        <connections>
-                                            <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="SaS-SM-mOy"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJx-au-XtY" userLabel="kickball">
-                                        <rect key="frame" x="192" y="8" width="175" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" image="Kickball"/>
-                                        <connections>
-                                            <action selector="buttonOne:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="MQb-97-S2x"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrk-hL-Fyp" userLabel="soccer">
+                                                <rect key="frame" x="1" y="9" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Soccer"/>
+                                                <connections>
+                                                    <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ATN-Yk-faF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvA-5v-Zbk" userLabel="football">
+                                                <rect key="frame" x="184" y="9" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Football"/>
+                                                <connections>
+                                                    <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ClF-IV-0up"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar1-ol-i0Q" userLabel="basketball">
+                                                <rect key="frame" x="1" y="127" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Basketball"/>
+                                                <connections>
+                                                    <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="x58-lQ-OEq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utK-J8-91L" userLabel="Yoga">
+                                                <rect key="frame" x="184" y="127" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Yoga"/>
+                                                <connections>
+                                                    <action selector="buttonFour:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="K9h-7s-1xM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOi-qs-eEv" userLabel="Fitness">
+                                                <rect key="frame" x="1" y="245" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Fitness"/>
+                                                <connections>
+                                                    <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="174-mu-M68"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4D-Um-XlC" userLabel="golf">
+                                                <rect key="frame" x="184" y="245" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Golf"/>
+                                                <connections>
+                                                    <action selector="buttonSix:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="lvF-u8-qo7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qb-TL-xvM" userLabel="fishing">
+                                                <rect key="frame" x="1" y="363" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Fishing"/>
+                                                <connections>
+                                                    <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="LwS-e7-TmG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyu-qv-LCM" userLabel="tennis">
+                                                <rect key="frame" x="184" y="363" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Tennis"/>
+                                                <connections>
+                                                    <action selector="buttonEight:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="UeV-I8-Y50"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6d-Qv-Wgj" userLabel="riding">
+                                                <rect key="frame" x="0.0" y="479" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Riding"/>
+                                                <connections>
+                                                    <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="uyK-Rk-0Gi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-cV-1Pe" userLabel="baseball/ softball">
+                                                <rect key="frame" x="184" y="479" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Baseball"/>
+                                                <connections>
+                                                    <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="3iP-jZ-S7D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4co-Ha-nSO" userLabel="billards">
+                                                <rect key="frame" x="0.0" y="597" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Billards"/>
+                                                <connections>
+                                                    <action selector="buttonOne:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="qmD-Kr-dNv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-NX-ZZ2" userLabel="running/ hiking">
+                                                <rect key="frame" x="184" y="597" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Running"/>
+                                                <connections>
+                                                    <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="bEj-4m-n6u"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SL-JV-upC" userLabel="camping">
+                                                <rect key="frame" x="2" y="715" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Camping"/>
+                                                <connections>
+                                                    <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="zpT-c5-l5f"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjd-PI-yXI" userLabel="water games">
+                                                <rect key="frame" x="184" y="715" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Water Games"/>
+                                                <connections>
+                                                    <action selector="buttonFour:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="KfJ-pV-g6n"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL8-lq-tye" userLabel="climbing">
+                                                <rect key="frame" x="2" y="833" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Climbing"/>
+                                                <connections>
+                                                    <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="6EA-HJ-rwd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtL-Jb-8Hw" userLabel="disc games">
+                                                <rect key="frame" x="184" y="833" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Frisbee"/>
+                                                <connections>
+                                                    <action selector="buttonSix:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="CUJ-p6-E1s"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-z2-Gt8" userLabel="bowling">
+                                                <rect key="frame" x="1" y="951" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Bowling"/>
+                                                <connections>
+                                                    <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ivP-YB-kWw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUy-jl-gSz" userLabel="table games">
+                                                <rect key="frame" x="184" y="951" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Table Games"/>
+                                                <connections>
+                                                    <action selector="buttonEight:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="Pl1-9y-IgA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFN-yE-wQX" userLabel="lacrosse">
+                                                <rect key="frame" x="0.0" y="1069" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Lacrosse"/>
+                                                <connections>
+                                                    <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="SaS-SM-mOy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJx-au-XtY" userLabel="kickball">
+                                                <rect key="frame" x="184" y="1069" width="175" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" image="Kickball"/>
+                                                <connections>
+                                                    <action selector="buttonOne:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="MQb-97-S2x"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
@@ -834,8 +841,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Discover" selectedImage="Discover Selected" id="Emj-od-rTF"/>
                     <navigationItem key="navigationItem" id="a40-XR-67K"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1320"/>
                     <connections>
@@ -860,12 +867,12 @@
                         <outlet property="butTwo" destination="tvA-5v-Zbk" id="cev-op-9to"/>
                         <outlet property="butZero" destination="hrk-hL-Fyp" id="ghw-N9-vhy"/>
                         <outlet property="scrlVW" destination="vqW-PU-Ibi" id="HNW-P6-Nmk"/>
-                        <segue destination="eDO-mI-sMP" kind="push" identifier="discoverEvent" id="3BG-k8-tmr"/>
+                        <segue destination="eDO-mI-sMP" kind="show" identifier="discoverEvent" id="3BG-k8-tmr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMO-Ty-6b2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1647.5" y="-147"/>
+            <point key="canvasLocation" x="-2636" y="-132.23388305847078"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="NyL-Lg-yae">
@@ -934,7 +941,7 @@
                                     <outlet property="lblDateTime" destination="Yzq-oF-NNR" id="dpu-Gt-ycX"/>
                                     <outlet property="lblTweet" destination="Lim-cE-mux" id="hHQ-k3-Lrh"/>
                                     <outlet property="lblUserName" destination="cZL-mh-YDJ" id="v9E-8o-q13"/>
-                                    <segue destination="kYa-5B-zJd" kind="push" id="bDj-6L-rqu"/>
+                                    <segue destination="kYa-5B-zJd" kind="show" id="bDj-6L-rqu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -967,7 +974,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hdf-6V-P8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1616.5" y="-1350"/>
+            <point key="canvasLocation" x="-2586.4000000000001" y="-1214.392803598201"/>
         </scene>
         <!--Feed Detail View Controller-->
         <scene sceneID="2Q9-0M-8Uf">
@@ -998,7 +1005,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPM-9G-1mz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-488" y="-510"/>
+            <point key="canvasLocation" x="-780.80000000000007" y="-458.77061469265374"/>
         </scene>
         <!--Terms & Conditions-->
         <scene sceneID="8It-6Z-hs9">
@@ -1044,7 +1051,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPE-pq-yVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-487.5" y="388"/>
+            <point key="canvasLocation" x="-780" y="349.02548725637183"/>
         </scene>
         <!--Favorites Table View Controller-->
         <scene sceneID="gaG-EY-ddZ">
@@ -1075,7 +1082,7 @@
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
-                                        <segue destination="ymv-lc-u6U" kind="push" animates="NO" id="wc1-kp-ItY"/>
+                                        <segue destination="ymv-lc-u6U" kind="show" animates="NO" id="wc1-kp-ItY"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vW-6T-Ud5">
@@ -1173,7 +1180,7 @@
                                     <outlet property="largeBack" destination="fxA-Ax-I5t" id="hUX-b5-aaB"/>
                                     <outlet property="lblDateTime" destination="Pmo-PW-clD" id="9aN-kQ-jyJ"/>
                                     <outlet property="lblEventName" destination="OiY-qm-4Im" id="E6n-ZH-UNy"/>
-                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="eventDetailsSegue" id="4JL-TO-diO"/>
+                                    <segue destination="GJ5-Ez-Ag6" kind="show" identifier="eventDetailsSegue" id="4JL-TO-diO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1202,7 +1209,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5Q-vu-gIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95" y="-1534"/>
+            <point key="canvasLocation" x="152" y="-1379.9100449775115"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="0v6-xa-O5w">
@@ -1385,7 +1392,7 @@
                                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="yVU-lJ-K5Q" kind="push" id="t73-de-GiG"/>
+                                                        <segue destination="yVU-lJ-K5Q" kind="show" id="t73-de-GiG"/>
                                                     </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C4V-cH-IlL">
@@ -1455,7 +1462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gz0-9l-sJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="690.5" y="-1351"/>
+            <point key="canvasLocation" x="1104.8" y="-1215.2923538230887"/>
         </scene>
         <!--Program Description View Controller-->
         <scene sceneID="21W-JZ-5lT">
@@ -1493,7 +1500,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WK-ya-r6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1397" y="-1366.5"/>
+            <point key="canvasLocation" x="2235.2000000000003" y="-1229.2353823088456"/>
         </scene>
         <!--Maps-->
         <scene sceneID="WdJ-TP-gcR">
@@ -1515,7 +1522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0is-ca-8AR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3180" y="353"/>
+            <point key="canvasLocation" x="-5088" y="317.54122938530736"/>
         </scene>
         <!--Discover Table View Controller-->
         <scene sceneID="Bfa-tI-Yqg">
@@ -1605,7 +1612,7 @@
                                     <outlet property="imgIcon" destination="QFN-Ex-4y6" id="hKi-fD-KIA"/>
                                     <outlet property="lblDateTime" destination="wEb-VU-mEt" id="vqH-lO-ycq"/>
                                     <outlet property="lblEventName" destination="orM-vp-kqw" id="3v3-S2-rPn"/>
-                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="discoverCell" id="5BI-DP-Akc"/>
+                                    <segue destination="GJ5-Ez-Ag6" kind="show" identifier="discoverCell" id="5BI-DP-Akc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1625,7 +1632,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncD-zV-sfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1005.5" y="-510"/>
+            <point key="canvasLocation" x="-1608.8000000000002" y="-458.77061469265374"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P2C-wx-DeA">
@@ -1641,7 +1648,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecf-S3-Qk7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2657" y="353"/>
+            <point key="canvasLocation" x="-4251.1999999999998" y="317.54122938530736"/>
         </scene>
         <!--More View Controller-->
         <scene sceneID="TcK-gX-dIz">
@@ -1673,16 +1680,16 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
-                        <segue destination="ofP-CN-yoG" kind="push" identifier="loginRegister" id="ymL-KN-Yv3"/>
-                        <segue destination="Esk-Y6-vmr" kind="push" identifier="termsCondition" id="c3b-7q-UHr"/>
-                        <segue destination="T4o-Af-Ooy" kind="push" identifier="aboutUs" id="JfJ-9J-PcO"/>
-                        <segue destination="EYQ-sL-8zz" kind="push" identifier="helpCenter" id="okc-1f-ZH5"/>
-                        <segue destination="1D8-Gt-16Y" kind="push" identifier="registerVC" id="Tr9-s1-lRx"/>
+                        <segue destination="ofP-CN-yoG" kind="show" identifier="loginRegister" id="ymL-KN-Yv3"/>
+                        <segue destination="Esk-Y6-vmr" kind="show" identifier="termsCondition" id="c3b-7q-UHr"/>
+                        <segue destination="T4o-Af-Ooy" kind="show" identifier="aboutUs" id="JfJ-9J-PcO"/>
+                        <segue destination="EYQ-sL-8zz" kind="show" identifier="helpCenter" id="okc-1f-ZH5"/>
+                        <segue destination="1D8-Gt-16Y" kind="show" identifier="registerVC" id="Tr9-s1-lRx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpL-EI-hBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2214" y="353"/>
+            <point key="canvasLocation" x="-3542.4000000000001" y="317.54122938530736"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FmA-aa-wp5">
@@ -1699,7 +1706,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKC-o7-Aye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2213" y="-510"/>
+            <point key="canvasLocation" x="-3540.8000000000002" y="-458.77061469265374"/>
         </scene>
         <!--Abou View Controllers - About-->
         <scene sceneID="E16-uO-jp2">
@@ -1747,7 +1754,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fef-xs-pG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.5" y="388"/>
+            <point key="canvasLocation" x="194.40000000000001" y="349.02548725637183"/>
         </scene>
         <!--Policy Agreement-->
         <scene sceneID="Ehu-Ka-v0l">
@@ -1790,7 +1797,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VPi-j7-wIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1004.5" y="388"/>
+            <point key="canvasLocation" x="-1607.2" y="349.02548725637183"/>
         </scene>
         <!--Register-->
         <scene sceneID="NId-DM-5Mk">
@@ -1970,7 +1977,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZI7-nT-gxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1145.5" y="1540"/>
+            <point key="canvasLocation" x="-1832.8000000000002" y="1385.3073463268368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ceR-vN-lrW">
@@ -1988,7 +1995,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMk-o7-OAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2210" y="-2161"/>
+            <point key="canvasLocation" x="-3536" y="-1943.9280359820093"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MHz-ui-Bco">
@@ -2006,7 +2013,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AkN-55-Iz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2211" y="-1349"/>
+            <point key="canvasLocation" x="-3537.6000000000004" y="-1213.4932533733136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="u2T-EW-rju">
@@ -2025,7 +2032,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Li-XT-Ytc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1031" y="-1350"/>
+            <point key="canvasLocation" x="-1649.6000000000001" y="-1214.392803598201"/>
         </scene>
         <!--Attending View Controller-->
         <scene sceneID="lcY-T4-2sD">
@@ -2079,7 +2086,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixq-g6-bii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94.5" y="-553"/>
+            <point key="canvasLocation" x="151.20000000000002" y="-497.45127436281865"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="pEM-CF-E2n">
@@ -2116,7 +2123,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BPn-5N-zfJ" kind="push" animates="NO" id="C9L-jn-ty6"/>
+                                            <segue destination="BPn-5N-zfJ" kind="show" animates="NO" id="C9L-jn-ty6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2K-Lp-h1d">
@@ -2223,7 +2230,7 @@
                                             <outlet property="imgIcon" destination="nHp-xq-Ubb" id="vHD-KH-LFF"/>
                                             <outlet property="lblDateTime" destination="5Xi-OI-WT1" id="PkH-k0-BDq"/>
                                             <outlet property="lblEventName" destination="bla-0b-Z4X" id="uIe-hW-LnL"/>
-                                            <segue destination="GJ5-Ez-Ag6" kind="push" identifier="event_cal" id="GQZ-yq-JN7"/>
+                                            <segue destination="GJ5-Ez-Ag6" kind="show" identifier="event_cal" id="GQZ-yq-JN7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2260,7 +2267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h41-Zr-CbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94.5" y="-2482"/>
+            <point key="canvasLocation" x="151.20000000000002" y="-2232.6836581709149"/>
         </scene>
         <!--Review Create Event View Controller-->
         <scene sceneID="gvU-24-shB">
@@ -2451,7 +2458,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwz-Zp-LqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="548.5" y="-2478"/>
+            <point key="canvasLocation" x="877.60000000000002" y="-2229.0854572713647"/>
         </scene>
     </scenes>
     <resources>
@@ -2497,7 +2504,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wc1-kp-ItY"/>
-        <segue reference="4JL-TO-diO"/>
-        <segue reference="Yzg-yO-FJ6"/>
+        <segue reference="5BI-DP-Akc"/>
+        <segue reference="ymL-KN-Yv3"/>
     </inferredMetricsTieBreakers>
 </document>
