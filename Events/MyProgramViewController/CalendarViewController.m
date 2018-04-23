@@ -297,11 +297,15 @@
                     completion:nil];
 }
 */
+
+// Trying to create my own calendar view and not have constraints
+
+
 #pragma mark - Calendar Functions
 -(void)createCalendarView{
     
     CGRect rect=self.calendarView.frame;
- //   rect.size.height=395; // 300
+    rect.size.height=395; // 300
     calendarBG=[[UIView alloc] initWithFrame:rect];
     VRGCalendarView *calendar = [[VRGCalendarView alloc] init];
     calendar.delegate=(id)self;
@@ -309,6 +313,8 @@
     [self.calendarView addSubview:calendarBG];
 }
 
+ 
+ 
 #pragma mark - VRGCalendarView delegate methods
 -(void)calendarView:(VRGCalendarView *)calendarView switchedToMonth:(int)month targetHeight:(float) targetHeight animated:(BOOL)animated {
     
@@ -316,10 +322,10 @@
     
     
     CGRect rect=self.tblMainTable.frame;
-//    rect.origin.y= targetHeight+100; //360
-//    rect.size.height= 390; // 198
+    rect.origin.y= targetHeight+175; //360
+    rect.size.height= 350; // 198
     self.tblMainTable.frame=rect;
- //   [self.calendarView setContentSize:CGSizeMake(375, targetHeight+rect.size.height)];
+    [self.calendarView setContentSize:CGSizeMake(375, targetHeight+rect.size.height)];
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd h:mm:ss"];
     NSDate *currentDate =   [NSDate date];
