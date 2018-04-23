@@ -14,7 +14,7 @@
 
 // Adjust Tab Bar Height
 
-
+/*
 -(CGSize)sizeThatFits:(CGSize)size
 {
     CGSize sizeThatFits = [super sizeThatFits:size];
@@ -23,6 +23,6 @@
     return  sizeThatFits;
 
 }
-
+*/
 
 @end
