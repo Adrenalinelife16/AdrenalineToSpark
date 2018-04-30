@@ -1279,15 +1279,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="420" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F0C-ID-Dpb">
-                                <rect key="frame" x="0.0" y="65" width="420" height="277"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F0C-ID-Dpb">
+                                <rect key="frame" x="0.0" y="70" width="420" height="277"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="01O-Dc-ZI8"/>
                                     <constraint firstAttribute="height" constant="277" id="GKV-Hk-Cdg"/>
                                 </constraints>
                             </mapView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7vo-Zb-OAf">
-                                <rect key="frame" x="0.0" y="350" width="420" height="194"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7vo-Zb-OAf">
+                                <rect key="frame" x="0.0" y="355" width="420" height="194"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="194" id="MRb-or-eJw"/>
@@ -1509,7 +1509,6 @@
                             <constraint firstItem="7vo-Zb-OAf" firstAttribute="top" secondItem="F0C-ID-Dpb" secondAttribute="bottom" constant="8" id="XJT-FB-Iq8"/>
                             <constraint firstAttribute="trailing" secondItem="F0C-ID-Dpb" secondAttribute="trailing" id="lMm-ws-dDg"/>
                             <constraint firstItem="7vo-Zb-OAf" firstAttribute="trailing" secondItem="F0C-ID-Dpb" secondAttribute="trailing" id="nZD-gx-D23"/>
-                            <constraint firstItem="F0C-ID-Dpb" firstAttribute="top" secondItem="PNQ-T2-Nf5" secondAttribute="top" constant="65" id="u2D-tF-ONi"/>
                         </constraints>
                         <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
                         <viewLayoutGuide key="safeArea" id="nZI-Sx-MAQ"/>
@@ -1531,16 +1530,14 @@
             <objects>
                 <viewController id="yVU-lJ-K5Q" customClass="ProgramDescriptionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QzG-OX-15u">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="mkr-sh-u2G">
-                                <rect key="frame" x="0.0" y="20" width="320" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="mkr-sh-u2G">
+                                <rect key="frame" x="0.0" y="64" width="420" height="667"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" editable="NO" text="Hello lorem ipsum" translatesAutoresizingMaskIntoConstraints="NO" id="YS9-jV-dl6">
-                                <rect key="frame" x="0.0" y="20" width="320" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" editable="NO" text="Hello lorem ipsum" translatesAutoresizingMaskIntoConstraints="NO" id="YS9-jV-dl6">
+                                <rect key="frame" x="0.0" y="64" width="420" height="667"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1548,13 +1545,21 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mkr-sh-u2G" firstAttribute="height" secondItem="QzG-OX-15u" secondAttribute="height" id="FGI-wn-2yJ"/>
+                            <constraint firstItem="mkr-sh-u2G" firstAttribute="width" secondItem="QzG-OX-15u" secondAttribute="width" id="FgJ-Ri-azf"/>
+                            <constraint firstItem="YS9-jV-dl6" firstAttribute="height" secondItem="QzG-OX-15u" secondAttribute="height" id="JzN-hb-7QO"/>
+                            <constraint firstItem="mkr-sh-u2G" firstAttribute="top" secondItem="VFK-Fd-fpb" secondAttribute="top" id="lbG-32-WWd"/>
+                            <constraint firstItem="YS9-jV-dl6" firstAttribute="top" secondItem="VFK-Fd-fpb" secondAttribute="top" id="ofj-OW-wIQ"/>
+                            <constraint firstItem="YS9-jV-dl6" firstAttribute="width" secondItem="QzG-OX-15u" secondAttribute="width" id="zGD-Db-12m"/>
+                        </constraints>
                         <inset key="insetFor6xAndEarlier" minX="0.0" minY="-20" maxX="0.0" maxY="20"/>
                         <viewLayoutGuide key="safeArea" id="VFK-Fd-fpb"/>
                     </view>
                     <navigationItem key="navigationItem" id="qix-CE-HbP"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="667"/>
+                    <size key="freeformSize" width="420" height="667"/>
                     <connections>
                         <outlet property="txtVWDescription" destination="YS9-jV-dl6" id="xd6-xM-i3F"/>
                         <outlet property="view" destination="QzG-OX-15u" id="lR0-IU-liV"/>
