@@ -26,6 +26,8 @@
 
 @end
 
+// Chazz sucks balls
+
 @implementation AboutViewController
 
 {
