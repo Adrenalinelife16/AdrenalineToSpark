@@ -1,16 +1,29 @@
 Check list of things needed to get done to be Spark ready!!!
 
 1. Add new updated images
+
 2. look into filter button on iPhone X, looks smaller then it should be
+
 3. Spacing on events on iPhone X
+
 4. Move description arrow - Michael - DONE
+
 5. Can't click on last 6 categories in discover events
+
 6. Get coded constraints working for calendar view - Michael - In Progress
+
 7. Fix constraints on choose category when adding event
-8. Fix constraints on add event.
+
+8. Fix constraints on add event
+
 9. Fix constraints on event review
+
 10. Fix title font on "Choose Category" view - Michael - DONE
+
 11. Look into scrolling with contraints on add event and event review
-12. Check formatt on all iPhone devices.
+
+12. Check formatt on all iPhone devices
+
 13. Make sure the word "Adrenaline Life" is removed from all of the app
+
 14. Add notifications
