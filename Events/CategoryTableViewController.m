@@ -21,6 +21,8 @@
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     
+  
+    
     
     // Created Category Array
 
@@ -37,8 +39,10 @@
 {
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Choose a Category";
+    
     [self.navigationController.navigationBar setTitleTextAttributes:
-     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+     @{NSForegroundColorAttributeName:[UIColor blackColor]}];
+    
 }
 
 

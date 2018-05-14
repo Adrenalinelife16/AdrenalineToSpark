@@ -1470,7 +1470,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="QnD-QC-m2E">
-                                                    <rect key="frame" x="329" y="30" width="11" height="14"/>
+                                                    <rect key="frame" x="380" y="27" width="11" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="11" id="ROS-F5-DRh"/>
                                                         <constraint firstAttribute="height" constant="14" id="gxK-AA-8ey"/>
@@ -1481,11 +1481,11 @@
                                                 <constraint firstItem="gQG-fV-d9E" firstAttribute="top" secondItem="3O2-xJ-uAE" secondAttribute="top" constant="12" id="Er5-0b-MUN"/>
                                                 <constraint firstItem="EmG-Co-7Qj" firstAttribute="leading" secondItem="3O2-xJ-uAE" secondAttribute="leading" constant="8" id="fMc-72-h30"/>
                                                 <constraint firstItem="EmG-Co-7Qj" firstAttribute="top" secondItem="3O2-xJ-uAE" secondAttribute="top" constant="25" id="mPU-l8-Xl9"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="QnD-QC-m2E" secondAttribute="trailing" constant="65" id="rvN-oX-nBp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="QnD-QC-m2E" secondAttribute="trailing" constant="14" id="rvN-oX-nBp"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
-                                            <constraint firstItem="QnD-QC-m2E" firstAttribute="top" secondItem="Q01-Zk-x9f" secondAttribute="top" constant="30" id="Ghb-aC-qvI"/>
+                                            <constraint firstItem="QnD-QC-m2E" firstAttribute="top" secondItem="Q01-Zk-x9f" secondAttribute="top" constant="27" id="Ghb-aC-qvI"/>
                                             <constraint firstItem="C4V-cH-IlL" firstAttribute="top" secondItem="Q01-Zk-x9f" secondAttribute="top" constant="58" id="LtL-rO-j6x"/>
                                         </constraints>
                                         <connections>
