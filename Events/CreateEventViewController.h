@@ -11,7 +11,6 @@
 @interface CreateEventViewController : UIViewController <UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate>
 {
     UIDatePicker *datePicker;
-
 }
 
 // Fields for event submit

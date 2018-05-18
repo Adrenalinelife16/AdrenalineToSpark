@@ -10,21 +10,25 @@
 #import <UIKit/UIKit.h>
 #import "UIColor+expanded.h"
 
+
 #define kVRGCalendarViewTopBarHeight 48
 #define kVRGCalendarViewWidth 375
 
-#define kVRGCalendarViewDayWidth 52
+#define kVRGCalendarViewDayWidth 61
 #define kVRGCalendarViewDayHeight 42
 
 
 #define kVRGCalendarViewDayPadding 5
+
+
 @protocol VRGCalendarViewDelegate;
 @interface VRGCalendarView : UIView {
     id <VRGCalendarViewDelegate> delegate;
     
     NSDate *currentMonth;
-    
     NSDate *eventDate;
+    int calendarOverallViewWidth;
+    int calendarOverallViewDayWidth;
     
     UILabel *labelCurrentMonth;
     

@@ -57,6 +57,7 @@
 
 
 
+
 #pragma mark - View Life Cycle
 - (void)viewDidLoad {
     
@@ -68,7 +69,6 @@
     [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"CDT"]];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
-    
     
 }
 
@@ -323,7 +323,7 @@
     
     CGRect rect=self.tblMainTable.frame;
     rect.origin.y= targetHeight+175; //360 // now 175
-    rect.size.height= 371; // 198 // now 350
+    rect.size.height= 375; // 198 // now 350
     self.tblMainTable.frame=rect;
     [self.calendarView setContentSize:CGSizeMake(375, targetHeight+rect.size.height)];
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
