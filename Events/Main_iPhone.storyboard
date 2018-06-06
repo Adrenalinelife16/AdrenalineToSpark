@@ -2213,7 +2213,7 @@
                                         </constraints>
                                     </scrollView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWm-CC-0BB">
-                                        <rect key="frame" x="0.0" y="65" width="414" height="40"/>
+                                        <rect key="frame" x="0.0" y="85" width="414" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fec-lO-v4N">
                                                 <rect key="frame" x="224" y="5" width="170" height="31"/>
@@ -2260,7 +2260,7 @@
                                     <constraint firstAttribute="trailing" secondItem="g3A-tZ-1m6" secondAttribute="trailing" id="IQU-zd-nyn"/>
                                     <constraint firstItem="g3A-tZ-1m6" firstAttribute="top" secondItem="xyh-EV-xXC" secondAttribute="top" constant="50" id="aIE-29-tjb"/>
                                     <constraint firstItem="dWm-CC-0BB" firstAttribute="width" secondItem="xyh-EV-xXC" secondAttribute="width" id="jm4-Jf-0Nz"/>
-                                    <constraint firstItem="dWm-CC-0BB" firstAttribute="top" secondItem="xyh-EV-xXC" secondAttribute="top" constant="65" id="nfg-Gj-rOx"/>
+                                    <constraint firstItem="dWm-CC-0BB" firstAttribute="top" secondItem="xyh-EV-xXC" secondAttribute="top" constant="85" id="nfg-Gj-rOx"/>
                                     <constraint firstItem="g3A-tZ-1m6" firstAttribute="leading" secondItem="xyh-EV-xXC" secondAttribute="leading" id="o8g-xk-meb"/>
                                     <constraint firstItem="g3A-tZ-1m6" firstAttribute="width" secondItem="xyh-EV-xXC" secondAttribute="width" id="rMF-xF-8wZ"/>
                                 </constraints>
@@ -2617,7 +2617,6 @@
         <image name="white-cell.png" width="306" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="C9L-jn-ty6"/>
         <segue reference="wc1-kp-ItY"/>
         <segue reference="GQZ-yq-JN7"/>
         <segue reference="Yzg-yO-FJ6"/>
