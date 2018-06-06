@@ -255,12 +255,6 @@
                                 <action selector="filterDay:" destination="XMy-k7-mqo" id="AOW-tk-rkN"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ec-V9-YvN">
-                            <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="createEvent:" destination="XMy-k7-mqo" id="zkF-3D-eJ2"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -275,7 +269,6 @@
                         </connections>
                     </refreshControl>
                     <connections>
-                        <outlet property="myAddButton" destination="3ec-V9-YvN" id="vn3-9p-tGU"/>
                         <outlet property="myFilterButton" destination="7dK-4v-tE2" id="u18-sk-YCV"/>
                         <outlet property="tblMainTbl" destination="6eF-vP-BpW" id="rT2-Bn-cui"/>
                         <segue destination="Jo0-vK-BNb" kind="show" identifier="CEcategory" id="Bt6-Gi-eBC"/>
